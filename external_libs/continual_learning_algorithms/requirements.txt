@@ -49,7 +49,6 @@ psutil==5.7.0
 ptyprocess==0.6.0
 pycurl==7.43.0
 Pygments==2.6.1
-pygobject
 pymongo==3.10.1
 pyparsing==2.4.7
 pyrsistent==0.16.0
