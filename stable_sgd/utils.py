@@ -42,9 +42,6 @@ def init_experiment(args):
 	# 1. setup seed for reproducibility
 	torch.manual_seed(args.seed)
 	np.random.seed(args.seed)
-	if DEVICE == 'cuda':
-		torch.backends.cudnn.deterministic = True
-		torch.backends.cudnn.benchmark = False
 	
 	# 2. create directory to save results
 	Path(EXPERIMENT_DIRECTORY).mkdir(parents=True, exist_ok=True)
