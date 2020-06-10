@@ -5,7 +5,7 @@ to compute the top eigenvalues and eigenvectors of a linear operator
 import numpy as np
 import torch
 
-from hessian_eigenthings.utils import log, progress_bar
+from .utils import log, progress_bar
 
 
 class Operator:
