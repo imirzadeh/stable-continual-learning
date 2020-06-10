@@ -15,16 +15,16 @@ lambda=10
 
 
 
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1345 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'ER' --log-dir $LOG_DIR
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1455 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'ER' --log-dir $LOG_DIR
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1668 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'ER' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1345 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'ER' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1455 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'ER' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1668 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'ER' --log-dir $LOG_DIR
 
 
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1345 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1455 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1668 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1345 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1455 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1668 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
 
 
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1345 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1455 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
-python3 ./fc_permute_mnist.py --dataset 'rot-mnist' --random-seed 1668 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1345 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1455 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
+python3 ./fc_mnist.py --dataset 'rot-mnist' --random-seed 1668 --decay 0.65 --examples-per-task 50000 --arch $ARCH --num-runs $NUM_RUNS --batch-size $BATCH_SIZE --optim $OPTIM --learning-rate $lr --imp-method 'A-GEM' --log-dir $LOG_DIR
