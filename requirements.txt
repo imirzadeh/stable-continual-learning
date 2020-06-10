@@ -1,0 +1,16 @@
+cycler==0.10.0
+future==0.18.2
+hessian-eigenthings==0.0.1
+kiwisolver==1.2.0
+matplotlib==3.2.1
+numpy==1.18.5
+pandas==1.0.4
+Pillow==7.1.2
+pyparsing==2.4.7
+python-dateutil==2.8.1
+pytz==2020.1
+scipy==1.4.1
+seaborn==0.10.1
+six==1.15.0
+torch==1.5.0
+torchvision==0.6.0
