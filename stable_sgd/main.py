@@ -133,8 +133,6 @@ def run(args):
 			optimizer = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.8)
 			train_single_epoch(model, optimizer, train_loader, criterion, current_task_id)
 			time += 1
-			print("Finished training task {}".format(current_task_id))
-			print("Going to collect continual learning metrics (e.g., accuracy, loss, ....)")
 
 			# 2. evaluate on all tasks up to now, including the current task
 			for prev_task_id in range(1, current_task_id+1):
