@@ -28,5 +28,7 @@ bash setup_and_install.sh
 ## 3. Replicating the Results
 We provide scripts to replicate the results:   
  * 3.1 Run ```bash replicate_experiment_1.sh``` for experiment 1 (stable vs plastic).   
- * 3.2 Run ```bash replicate_experiment_2.sh``` for experiment 2 (Comparison with other methods with 20 tasks).     
+ * 3.2 Run ```bash replicate_experiment_2.sh``` for experiment 2 (Comparison with other methods with 20 tasks).
  * 3.3 Run ```bash replicate_appendix_c5.sh```  for the experiment in appendix C5 (Stabilizing other methods).
+ 
+For faster replication, here we have only 3 runs per method per experiment, but we used 5 runs for the reported results.
