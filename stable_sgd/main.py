@@ -55,7 +55,7 @@ def eval_single_epoch(net, loader, criterion, task_id=None):
 			data = data.to(DEVICE)
 			target = target.to(DEVICE)
 			# for cifar head
-			if task_id:
+			if task_id is not None:
 				output = net(data, task_id)
 			else:
 				output = net(data)
