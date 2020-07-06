@@ -11,18 +11,19 @@ class MLP(nn.Module):
 		super(MLP, self).__init__()
 		self.W1 = nn.Linear(784, hiddens)
 		self.relu = nn.ReLU(inplace=True)
+		self.dropout_1 = nn.Dropout(p=config['dropout'])
 		self.W2 = nn.Linear(hiddens, hiddens)
+		self.dropout_2 = nn.Dropout(p=config['dropout'])
 		self.W3 = nn.Linear(hiddens, 10)
-		self.dropout_p = config['dropout']
 
 	def forward(self, x, task_id=None):
 		x = x.view(-1, 784)
 		out = self.W1(x)
 		out = self.relu(out)
-		out = nn.functional.dropout(out, p=self.dropout_p)
+		out = self.dropout_1(out)
 		out = self.W2(out)
 		out = self.relu(out)
-		out = nn.functional.dropout(out, p=self.dropout_p)
+		out = self.dropout_2(out)
 		out = self.W3(out)
 		return out
 
