@@ -24,7 +24,7 @@ def get_permuted_mnist(task_id, batch_size):
 				torchvision.transforms.Lambda(lambda x: x.view(-1)[idx_permute] ),
 				])
 	mnist_train = torchvision.datasets.MNIST('./data/', train=True, download=True, transform=transforms)
-	train_loader = torch.utils.data.DataLoader(mnist_train, batch_size=batch_size, num_workers=4, pin_memory=True, shuffle=False)
+	train_loader = torch.utils.data.DataLoader(mnist_train, batch_size=batch_size, num_workers=4, pin_memory=True, shuffle=True)
 	test_loader = torch.utils.data.DataLoader(torchvision.datasets.MNIST('./data/', train=False, download=True, transform=transforms),  batch_size=256, shuffle=False, num_workers=4, pin_memory=True)
 
 	return train_loader, test_loader
@@ -72,7 +72,7 @@ def get_rotated_mnist(task_id, batch_size):
 		torchvision.transforms.ToTensor(),
 		])
 
-	train_loader = torch.utils.data.DataLoader(torchvision.datasets.MNIST('./data/', train=True, download=True, transform=transforms), batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
+	train_loader = torch.utils.data.DataLoader(torchvision.datasets.MNIST('./data/', train=True, download=True, transform=transforms), batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True)
 	test_loader = torch.utils.data.DataLoader(torchvision.datasets.MNIST('./data/', train=False, download=True, transform=transforms),  batch_size=256, shuffle=False, num_workers=4, pin_memory=True)
 
 	return train_loader, test_loader
@@ -110,7 +110,7 @@ def get_split_cifar100(task_id, batch_size, cifar_train, cifar_test):
 	targets_test = torch.tensor(cifar_test.targets)
 	target_test_idx = ((targets_test >= start_class) & (targets_test < end_class))
 
-	train_loader = torch.utils.data.DataLoader(torch.utils.data.dataset.Subset(cifar_train, np.where(target_train_idx==1)[0]), batch_size=batch_size)
+	train_loader = torch.utils.data.DataLoader(torch.utils.data.dataset.Subset(cifar_train, np.where(target_train_idx==1)[0]), batch_size=batch_size, shuffle=True)
 	test_loader = torch.utils.data.DataLoader(torch.utils.data.dataset.Subset(cifar_test, np.where(target_test_idx==1)[0]), batch_size=batch_size)
 
 	return train_loader, test_loader
