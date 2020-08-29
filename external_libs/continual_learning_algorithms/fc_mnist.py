@@ -70,7 +70,7 @@ LOG_DIR = './permute_mnist_results'
 ## Evaluation options
 
 ## Num Tasks
-NUM_TASKS = 23
+NUM_TASKS = 53
 MULTI_TASK = False
 
 def get_arguments():

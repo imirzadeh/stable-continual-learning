@@ -158,7 +158,7 @@ class Model:
         # Define approproate network
         if self.network_arch == 'FC-S':
             input_dim = int(x.get_shape()[1])
-            layer_dims = [input_dim, 256, 256, self.total_classes]
+            layer_dims = [input_dim, 512, 512, self.total_classes]
             if self.imp_method == 'PNN':
                 self.task_logits = []
                 self.task_pruned_logits = []
