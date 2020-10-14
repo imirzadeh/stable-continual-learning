@@ -1,5 +1,7 @@
 # Understanding the Role of Training Regimes in Continual Learning
-Towards increasing stability of neural networks for continual learning
+Towards increasing stability of neural networks for continual learning (NeurIPS'20)
+
+Note: I will add an updated version of the code soon. If you have problem reproducing the results, please see the instructions for reproducing [experiment 1](https://github.com/imirzadeh/stable-continual-learning/issues/1) and [experiment 2](https://github.com/imirzadeh/stable-continual-learning/issues/5).
 
 
 ## 1. Code Structure
@@ -26,6 +28,8 @@ bash setup_and_install.sh
 ```
 
 ## 3. Replicating the Results
+Note: I will add an updated version of the code soon. If you have problem reproducing the results, please see the instructions for reproducing [experiment 1](https://github.com/imirzadeh/stable-continual-learning/issues/1) and [experiment 2](https://github.com/imirzadeh/stable-continual-learning/issues/5).
+
 We provide scripts to replicate the results:   
  * 3.1 Run ```bash replicate_experiment_1.sh``` for experiment 1 (stable vs plastic).   
  * 3.2 Run ```bash replicate_experiment_2.sh``` for experiment 2 (Comparison with other methods with 20 tasks).
