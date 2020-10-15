@@ -1,7 +1,7 @@
 # Understanding the Role of Training Regimes in Continual Learning
 Towards increasing stability of neural networks for continual learning (NeurIPS'20)
 
-Note: I will add an updated version of the code soon. If you have problem reproducing the results, please see the instructions for reproducing [experiment 1](https://github.com/imirzadeh/stable-continual-learning/issues/1) and [experiment 2](https://github.com/imirzadeh/stable-continual-learning/issues/5).
+**Note: I will add an updated version of the code soon. If you have problem reproducing the results, please see the instructions for reproducing [experiment 1](https://github.com/imirzadeh/stable-continual-learning/issues/1) and [experiment 2](https://github.com/imirzadeh/stable-continual-learning/issues/5).**
 
 
 ## 1. Code Structure
